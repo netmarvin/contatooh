@@ -13,9 +13,9 @@ exports.config = {
     	            
             browser.driver.findElement(by.id('entrar')).click();
     
-            browser.driver.findElement(by.id('login_field')).sendKeys('xxxxxxxxxxx');
+            browser.driver.findElement(by.id('login_field')).sendKeys('aaa');
         
-            browser.driver.findElement(by.id('password')).sendKeys('yyyyyyyyyyy');
+            browser.driver.findElement(by.id('password')).sendKeys('bbb');
         
             browser.driver.findElement(by.name('commit')).click();  
         
