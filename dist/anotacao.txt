@@ -1,0 +1,37 @@
+
+------------------------------------
+	tecnologias usadas
+------------------------------------
+
+1 - node
+2 - npm
+3 - express
+4 - ejs
+5 - nodemon
+6 - express-load
+7 - body-parse
+8 - method-override
+9 - bower
+10 - angular
+11 - ngRoute
+12 - bootstrap
+13 - ngResource
+14 - mongodb
+15 - mongoose
+16 - passport
+17 - express-session
+18 - cookie-parser
+19 - passport-github
+20 - mongoose-findorcreate
+21 - helmet
+22 - mongo-sanitize
+23 - grunt
+24 - grunt-cli
+25 - grunt-contrib-copy
+26 - grunt-contrib-clean
+27 - grunt-contrib-concat
+28 - grunt-contrib-uglify
+29 - grunt-contrib-cssmin
+30 - grunt-usemin
+31 - grunt-ng-annotate
+32 - 
