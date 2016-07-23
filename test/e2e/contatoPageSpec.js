@@ -1,37 +1,38 @@
 
 // test/e2e/contatoPageSpec.js
-/*
+
+var ContatoPage = new require('./pages/contatoPage');
+
+
 describe('Cadastro de contatos', function() {
     
-    beforeEach(function() {
     
-        browser.get('http://localhost:3000/#/contato');
+    var pagina = new ContatoPage();
+    
+    beforeEach(function() {
+
+        pagina.visitar();
 
     });
     
-
+    
     it('Deve cadastrar um contato', function() {
-        
+    
         var aleatorio = Math.floor((Math.random() * 10000000) + 1);
         
-        var nome = 'teste' + aleatorio;
+        pagina.digitarNome('teste' + aleatorio);
         
-        var email = nome + '@email.com';
-        
-        element(by.model('contato.nome')).sendKeys(nome);
+        pagina.digitarEmail('teste@email' + aleatorio);
 
-        element(by.model('contato.email')).sendKeys(email);
+        pagina.selecionarPrimeiraEmergenciaDaLista();
         
-        element(by.css('option[value="0"]')).click();
+        pagina.salvar();
         
-        element(by.css('.btn-primary')).click();
-        
-        expect(element(by.binding('mensagem.texto')).getText()).toContain('sucesso');
+        expect(pagina.obterMensagem()).toContain('sucesso');
         
     });
-    
-    
+        
 });
 
-*/
+
 
