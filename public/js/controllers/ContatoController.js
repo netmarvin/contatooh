@@ -60,6 +60,8 @@ angular.module('appContato').controller('ContatoController',
 
                 // limpa o formulário
                 $scope.contato = new ContatoService();
+                
+                //$scope.$broadcast('contatoSalvo');
 
             })
 
@@ -71,7 +73,7 @@ angular.module('appContato').controller('ContatoController',
 
             });
             
-            //$location.path('/contatos');
+            $location.path('/contatos');
 
     };
     

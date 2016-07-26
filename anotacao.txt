@@ -38,4 +38,5 @@
 33 - karma-cli
 34 - angular-mocks
 35 - protractor
-36 - 
+36 - karma-ng-html2js-preprocessor
+37 - 

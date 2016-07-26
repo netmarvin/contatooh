@@ -1,7 +1,8 @@
 
 // public/js/main.js
 
-angular.module('appContato', ['ngRoute', 'ngResource']).config(function($routeProvider, $httpProvider) {
+angular.module('appContato', ['ngRoute', 'ngResource', 'meusComponentes'])
+  .config(function($routeProvider, $httpProvider) {
     
     
     $httpProvider.interceptors.push('meuInterceptor');
@@ -50,4 +51,5 @@ angular.module('appContato', ['ngRoute', 'ngResource']).config(function($routePr
 
 
 });
+
 
